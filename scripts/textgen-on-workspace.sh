@@ -1,4 +1,5 @@
 #!/bin/bash
+source /text-generation-webui-env/bin/activate
 
 # Ensure we have /workspace in all scenarios
 mkdir -p /workspace
@@ -13,3 +14,4 @@ fi
 
 # Then link /root/text-generation-webui folder to /workspace so it's available in that familiar location as well
 ln -s /workspace/text-generation-webui /root/text-generation-webui
+deactivate

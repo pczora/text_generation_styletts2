@@ -1,9 +1,8 @@
 #!/bin/bash
 echo "Starting: Ooobabooga's text-generation-webui. Container provided by TheBloke."
-
 SCRIPTDIR=/root/scripts
 VOLUME=/workspace
-
+source /text-generation-webui-env/bin/activate
 # If a volume is already defined, $VOLUME will already exist
 # If a volume is not being used, we'll still use /worksapce to ensure everything is in a known place.
 mkdir -p $VOLUME/logs
@@ -94,3 +93,4 @@ done
 
 # shouldn't actually reach this point
 sleep infinity
+deactivate

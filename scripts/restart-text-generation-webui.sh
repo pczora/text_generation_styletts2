@@ -1,4 +1,5 @@
 #!/bin/bash
+source /text-generation-webui-env/bin/activate
 
 echo -n "Restarting text-generation-webui: "
 
@@ -9,3 +10,4 @@ then
 else
     echo "was not running"
 fi
+deactivate
