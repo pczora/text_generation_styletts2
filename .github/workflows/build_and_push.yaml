@@ -6,6 +6,8 @@
     docker:
       runs-on: ubuntu-latest
       steps:
+        - name: Free some space
+          run: rm -rf /opt/hostedtoolcache
         - name: Docker meta
           id: meta
           uses: docker/metadata-action@v5
