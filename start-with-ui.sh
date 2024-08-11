@@ -33,7 +33,8 @@ if [[ $MODEL ]]; then
 fi
 
 # Checkout a specific commit of text-generation-webui that is known to work
-cd /workspace/text-generation-webui && git checkout 7cf1402
+#cd /workspace/text-generation-webui && git checkout 7cf1402
+cd /workspace/text-generation-webui
 
 # If UI_UPDATE is passed from the Runpod template
 if [[ ${UI_UPDATE} ]]; then
